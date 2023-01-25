@@ -1,18 +1,19 @@
 import styles from "./notification.module.css"
 
 export function Notification(props){
+    const clas = (props.recent == "true") ? "new" : "old"
     return(
-        <div>
+        <div className={`${clas}`}>
             <div className={styles.notification}>
                 <img src={props.image} alt="" />
                 <div>
-                    <p><strong>{props.name}</strong> {props.content}</p>
+                    <p className="pContent"><strong>{props.name}</strong> {props.content}</p>
                     <p className={styles.hour}>{props.hour}</p>
             
                 </div>
                 
             </div>
-                <div className={styles.containerMensage}>{props.children}</div>
+                {props.children}
         </div>
     )
 }

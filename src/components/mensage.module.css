@@ -1,0 +1,16 @@
+.containerMensage{
+    padding-left: 6rem;
+    padding-bottom: 1rem;
+
+    background-color:  rgba(237, 237, 237, 0.514);;
+}
+.containerMensage > p{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+    width: 90%;
+
+    border-radius: 6px;
+    
+    background-color: white;
+    color: rgba(0, 0, 0, 0.898);
+}

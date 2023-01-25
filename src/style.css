@@ -17,3 +17,14 @@ body{
 
     border-radius: 6px;
 }
+
+.old{
+    background-color: white;
+}
+.old > div{
+    background-color: white;
+}
+.new .pContent:after{
+    content: " *";
+    color: red;
+}
