@@ -22,6 +22,11 @@
     
     line-height: 1.5rem;
 }
+.name:hover{
+    color: rgba(5, 34, 98, 0.781);
+    
+    cursor: pointer;
+}
 
 .hour{
     font-weight: 100;

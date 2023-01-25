@@ -6,3 +6,12 @@
     padding: 1rem;
 
 }
+.header > p{
+    color: gray;
+}
+
+.header> p:hover{
+    color: rgba(5, 34, 98, 0.781);
+    
+    cursor: pointer;
+}

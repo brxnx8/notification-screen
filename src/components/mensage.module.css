@@ -1,5 +1,5 @@
 .containerMensage{
-    padding-left: 6rem;
+    padding-left: 7rem;
     padding-bottom: 1rem;
 
     background-color:  rgba(237, 237, 237, 0.514);;
@@ -13,4 +13,9 @@
     
     background-color: white;
     color: rgba(0, 0, 0, 0.898);
+}
+.containerMensage > p:hover{
+    background-color: rgba(195, 249, 255, 0.353);
+
+    cursor: pointer;
 }

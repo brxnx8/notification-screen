@@ -7,7 +7,7 @@ export function Notification(props){
             <div className={styles.notification}>
                 <img src={props.image} alt="" />
                 <div>
-                    <p className="pContent"><strong>{props.name}</strong> {props.content}</p>
+                    <p className="pContent"><strong className={styles.name}>{props.name}</strong> {props.content}</p>
                     <p className={styles.hour}>{props.hour}</p>
             
                 </div>
