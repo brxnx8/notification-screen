@@ -1,7 +1,7 @@
 import styles from "./notification.module.css"
 
 export function Notification(props){
-    const clas = (props.recent == "true") ? "new" : "old"
+    const clas = (props.recent) ? "new" : "old"
     return(
         <div className={`${clas}`}>
             <div className={styles.notification}>

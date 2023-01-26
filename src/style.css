@@ -18,13 +18,16 @@ body{
     border-radius: 6px;
 }
 
-.old{
-    background-color: white;
+.new > div{
+    background-color: rgba(237, 237, 237, 0.514);
 }
-.old > div{
-    background-color: white;
+.new {
+    background-color: rgba(237, 237, 237, 0.514);
 }
 .new .pContent:after{
     content: " *";
     color: red;
+}
+.hidden{
+    display: none;
 }
