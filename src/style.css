@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(211, 211, 211);
+}
+.App{
+    width: 80%;
+    
+    margin: 5rem auto;
+    padding: 0.5rem;
+
+    background-color: rgb(255, 255, 255);
+
+
+    border-radius: 6px;
+}
+
+.new > div{
+    background-color: rgba(237, 237, 237, 0.514);
+}
+.new {
+    background-color: rgba(237, 237, 237, 0.514);
+}
+.new .pContent:after{
+    content: " *";
+    color: red;
+}
+.hidden{
+    display: none;
+}

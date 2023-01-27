@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+}
+.header > p{
+    color: gray;
+}
+
+.header> p:hover{
+    color: rgba(5, 34, 98, 0.781);
+    
+    cursor: pointer;
+}
+
+.header > h1 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.header > h1 > p{
+    background-color: blue;
+    color: white;
+
+    box-sizing: border-box;
+    padding: 0.01rem 0.5rem;
+}
