@@ -41,6 +41,7 @@ function App() {
         content="followed you" 
         recent={newMensage}
         updateQuantityNewMensage={updateQuantityNewMensage}
+        QuantityNotifications={quantityNewMensage}
       />
       <Notification 
         image="https://github.com/brxnx8.png"  
@@ -49,6 +50,7 @@ function App() {
         content="reacted to you recent post" 
         recent={newMensage}
         updateQuantityNewMensage={updateQuantityNewMensage}
+        QuantityNotifications={quantityNewMensage}
       />
       <Notification 
         image="https://github.com/brxnx8.png" 
@@ -56,6 +58,7 @@ function App() {
         content="send you a private mensage"
         recent={newMensage}
         updateQuantityNewMensage={updateQuantityNewMensage}
+        QuantityNotifications={quantityNewMensage}
       >
 
             <Mensage mensagem = "Hello, thank you for accepting me in your network!"/>

@@ -2,7 +2,8 @@ import { useState } from "react"
 import styles from "./notification.module.css"
 
 export function Notification(props){
-    let classTemporary = (props.recent) ? "new" : "old"
+     
+    const classTemporary = (props.recent) ? "new" : "old"
 
     const [classTrue, setClassTrue] = useState(classTemporary)
 
@@ -26,7 +27,7 @@ export function Notification(props){
     }
 
     return(
-        <div className={classTrue} onLoad={UptadeQuantityNewMensage} onMouseOver={setClassOld}>
+        <div className={props.QuantityNotifications > 0 ? classTrue : "old"} onLoad={UptadeQuantityNewMensage} onMouseOver={setClassOld}>
             <div className={styles.notification}>
                 <img src={props.image} alt="" />
                 <div>
