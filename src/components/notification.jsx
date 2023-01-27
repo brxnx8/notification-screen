@@ -6,6 +6,7 @@ export function Notification(props){
 
     const [classTrue, setClassTrue] = useState(classTemporary)
 
+
     function UptadeQuantityNewMensage(){
         
         props.updateQuantityNewMensage(props.recent)

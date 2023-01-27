@@ -16,7 +16,7 @@ export function Header(props){
 
     return(
         <div className={styles.header}>
-            <h1>Notifications <p>{props.QuantityNotifications}</p></h1>
+            <h1>Notifications <p className={props.QuantityNotifications > 0 ? "" : "hidden"}>{props.QuantityNotifications}</p></h1>
             <p onClick={markFalse} className={classMarkAll}> Mark all as read</p>
         </div>
     )
