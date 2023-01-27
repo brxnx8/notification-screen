@@ -8,35 +8,54 @@ import "./style.css"
 
 function App() {
   
-  const [msgNew, setMsgNew] = useState([true]);
+  const[newMensage, setNewMensage] = useState([true]);
   
-  const msgOld = (falso) =>{
-    setMsgNew(falso)
+  function IsOldMensage(valor){
+    setNewMensage(valor)
   }
-  
+
+  const [quantityNewMensage, setQuantityNewMensage] = useState(0)
+
+  function updateQuantityNewMensage(valor){
+    if(valor){
+      setQuantityNewMensage((state) => {
+        return state + 1
+      })
+    }else {
+      setQuantityNewMensage((state) => {
+        return state - 1
+      })
+    }
+  }
+
   return (
     <div className="App">
       <Header
-        markAll={valor => msgOld(valor)}
+        markAll={IsOldMensage}
+        QuantityNotifications={quantityNewMensage}
+        updateQuantityNewMensage={updateQuantityNewMensage}
       />
       <Notification 
         image="https://github.com/brxnx8.png" 
         name="Bruno Oliveira" hour="5min ago" 
         content="followed you" 
-        recent={msgNew}
+        recent={newMensage}
+        updateQuantityNewMensage={updateQuantityNewMensage}
       />
       <Notification 
         image="https://github.com/brxnx8.png"  
         name="Bruno Oliveira" 
         hour="5min ago" 
         content="reacted to you recent post" 
-        recent={msgNew}
+        recent={newMensage}
+        updateQuantityNewMensage={updateQuantityNewMensage}
       />
       <Notification 
         image="https://github.com/brxnx8.png" 
         name="Bruno Oliveira" hour="5min ago" 
         content="send you a private mensage"
-        recent={msgNew}
+        recent={newMensage}
+        updateQuantityNewMensage={updateQuantityNewMensage}
       >
 
             <Mensage mensagem = "Hello, thank you for accepting me in your network!"/>
